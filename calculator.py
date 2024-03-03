@@ -35,15 +35,13 @@ def button_equal():
     elif math_operator == "division":
         entry.insert(0, f_num / float(second_number))
 
-# Створення головного вікна
+
 root = tk.Tk()
 root.title("Простий калькулятор")
 
-# Створення елемента Entry для введення чисел
 entry = tk.Entry(root, width=20, borderwidth=5)
 entry.grid(row=0, column=0, columnspan=4, padx=10, pady=10)
 
-# Створення кнопок та їх розташування за допомогою менеджера пакування Grid
 buttons = [
     ('7', 1, 0), ('8', 1, 1), ('9', 1, 2), ('/', 1, 3),
     ('4', 2, 0), ('5', 2, 1), ('6', 2, 2), ('*', 2, 3),
